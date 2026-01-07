@@ -5,3 +5,5 @@ I am a software tester with a strong focus on product quality, risk analysis, an
 My expertise includes test case design, requirement analysis, defect tracking, regression testing, and release validation in Agile environments. I collaborate closely with developers, product managers, and stakeholders to identify issues early, improve test coverage, and support reliable deployments.
 
 I approach testing with a quality-engineering mindset, combining attention to detail with a deep understanding of system behavior, APIs, and real-world user scenarios. My goal is to prevent defects, optimize testing processes, and ensure software performs as expected in production.
+
+I'm adding this to run another command to see if im doing well
