@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "8b1f55aa-ea98-409d-a6bd-0a0bc9c82759",
+		"name": "APICollection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "51301515",
+		"_collection_link": "https://agudaolamilekan-1590472.postman.co/workspace/15eb40bc-3a90-4ead-8719-9207919218aa/collection/51301515-8b1f55aa-ea98-409d-a6bd-0a0bc9c82759?action=share&source=collection_link&creator=51301515"
+	},
+	"item": [
+		{
+			"name": "Get All Todo Entries",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code should be 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code name should have an OK string\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+					"protocol": "https",
+					"host": [
+						"schema",
+						"getpostman",
+						"com"
+					],
+					"path": [
+						"json",
+						"collection",
+						"v2.1.0",
+						"collection.json"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Todo Entries",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://demo.fusio-project.org/index.php",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"fusio-project",
+								"org"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.24.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Jan 2026 04:32:07 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2177"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Fusio"
+						},
+						{
+							"key": "x-request-id",
+							"value": "cad853df-3135-421e-8993-328b4c0663d0"
+						},
+						{
+							"key": "x-operation-id",
+							"value": "meta.getAbout"
+						},
+						{
+							"key": "x-stability",
+							"value": "stable"
+						},
+						{
+							"key": "ratelimit-limit",
+							"value": "900"
+						},
+						{
+							"key": "ratelimit-remaining",
+							"value": "894"
+						},
+						{
+							"key": "vary",
+							"value": "Accept"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"apiVersion\": \"8.7.2.0\",\n    \"title\": \"Fusio\",\n    \"description\": \"Self-Hosted API Management for Builders.\",\n    \"paymentCurrency\": \"EUR\",\n    \"categories\": [\n        \"authorization\",\n        \"backend\",\n        \"consumer\",\n        \"default\",\n        \"system\"\n    ],\n    \"scopes\": [\n        \"default\"\n    ],\n    \"links\": [\n        {\n            \"rel\": \"root\",\n            \"href\": \"https://demo.fusio-project.org/\"\n        },\n        {\n            \"rel\": \"apps\",\n            \"href\": \"https://demo.fusio-project.org/apps\"\n        },\n        {\n            \"rel\": \"openapi\",\n            \"href\": \"https://demo.fusio-project.org/system/generator/spec-openapi\"\n        },\n        {\n            \"rel\": \"typeapi\",\n            \"href\": \"https://demo.fusio-project.org/system/generator/spec-typeapi\"\n        },\n        {\n            \"rel\": \"route\",\n            \"href\": \"https://demo.fusio-project.org/system/route\"\n        },\n        {\n            \"rel\": \"health\",\n            \"href\": \"https://demo.fusio-project.org/system/health\"\n        },\n        {\n            \"rel\": \"oauth2\",\n            \"href\": \"https://demo.fusio-project.org/authorization/token\"\n        },\n        {\n            \"rel\": \"whoami\",\n            \"href\": \"https://demo.fusio-project.org/authorization/whoami\"\n        },\n        {\n            \"rel\": \"api-catalog\",\n            \"href\": \"https://demo.fusio-project.org/.well-known/api-catalog\"\n        },\n        {\n            \"rel\": \"oauth-authorization-server\",\n            \"href\": \"https://demo.fusio-project.org/.well-known/oauth-authorization-server\"\n        },\n        {\n            \"rel\": \"oauth-protected-resource\",\n            \"href\": \"https://demo.fusio-project.org/.well-known/oauth-protected-resource\"\n        },\n        {\n            \"rel\": \"openid-configuration\",\n            \"href\": \"https://demo.fusio-project.org/.well-known/openid-configuration\"\n        },\n        {\n            \"rel\": \"security\",\n            \"href\": \"https://demo.fusio-project.org/.well-known/security.txt\"\n        },\n        {\n            \"rel\": \"about\",\n            \"href\": \"https://www.fusio-project.org\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
